@@ -1,6 +1,6 @@
 def pattern1(n):
-    for i in range(5):
-        for j in range(5):
+    for i in range(n):
+        for j in range(n):
             print("* " , end = ' ' )
         print()
 
