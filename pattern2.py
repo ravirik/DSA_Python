@@ -4,3 +4,4 @@ def pattern1(n):
 
 n = 10
 pattern1(n)
+
