@@ -1,18 +1,14 @@
 def pattern17(n):
-    for i in range(0,n):
-        for j in range(n-i-1):
-            print(' ',end='')
-        breakpoint = (2*i+1)//2
-        ch ='A'
-        for j in range(1,2*i+1):
-            print(ch,end='')
-            if j<=breakpoint:
-                ch=chr(ord(ch)+1)
-            else:
-                 ch=chr(ord(ch)-1)
-        for j in range(n-i-1):
-            print(' ',end='')
-        print("\r")
+    for i in range(n):
+        for j in range(n - i - 1):
+            print(" ", end="")
+        for j in range(i + 1):
+            print(chr(65 + j), end="")
+        for j in range(i, 0, -1):
+            print(chr(64 + j), end="")
+        for j in range(n - i - 1):
+            print(" ", end="")
+        print()
 
-n= int(input())
+n = int(input("Enter a number: "))
 pattern17(n)
