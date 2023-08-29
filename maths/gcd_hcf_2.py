@@ -10,6 +10,8 @@ def gcd_hcf_2(a,b):
         print(a)
 
 a = int(input('Enter a number : '))
+
 b = int(input('Enter a number : '))
 
 gcd_hcf_2(a,b)
+
