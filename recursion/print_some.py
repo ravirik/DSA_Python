@@ -1,11 +1,8 @@
 
-cnt=0
-def print_some(n):
-    global cnt
+def print_some(n,cnt=0):
     if(cnt<n):
         print(cnt)
-        cnt+=1
-        print_some(n)
+        print_some(n,cnt+1)
     else:
         return 0
 
